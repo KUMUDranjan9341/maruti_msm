@@ -1,0 +1,135 @@
+<%- include('./common/header') -%>
+    <!-- header -->
+    <div class="container-fluid aboutbg">
+        <div class="row p-5">
+            <div class="">
+                <span class="">
+                    <h2 class="text-white">Job</h2>
+                    <p class="text-white">HOME > PAGES > CAREERS > <span class="page_active">APPLY FOR JOB</span> </p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- form start -->
+    <div class="container-fluid mt-4 mb-4 ">
+        <div class="row justify-content-center">
+            <!-- <div class="col-md-4">
+       
+    </div> -->
+            <div class="col-md-5 border border-3 p-3 formservice">
+                <h3 class="color text-center">Apply For JOb</h3>
+                <form class="mt-4 formservice" action="/jobforms" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label class="" for="">Location</label>
+                        <select class="" name="location" id="">
+                            <option value="G.T. Karnal Road(Delhi)">G.T. Karnal Road(Delhi)</option>
+                            <option value="Okhla Indl Area Phase-II (Delhi)">Okhla Indl Area Phase-II (Delhi)</option>
+                            <option value="Plote N0. 09,South Phase (Chennai)">Plote N0. 09,South Phase (Chennai)
+                            </option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="">Post Applied For*:</label>
+                        <input class="" type="text" name="postapply">
+                    </div>
+
+                    <div>
+                        <label for="">Name:</label>
+                        <input class="" type="text" name="name">
+                    </div>
+
+                    <div>
+                        <label for="">Faher's Name:</label>
+                        <input class="" type="text" name="fathername">
+                    </div>
+
+
+                    <div>
+                        <label class="" for="">Date of Birth :</label>
+                        <input type="date" id="" name="dateofbirth">
+                    </div>
+
+                    <div>
+                        <label class="" for="">Phone Number* :</label>
+                        <input type="text" id="" name="phonenumber">
+                    </div>
+
+                    <div>
+                        <label class="" for="">Email* :</label>
+                        <input type="email" id="" name="email">
+                    </div>
+
+                    <div>
+                        <label class="" for="">Education Qualification: </label>
+                        <select class="" name="qualification" id="">
+                            <option value="Under Matric">Under Matric</option>
+                            <option value="10th Pass">10th Pass</option>
+                            <option value="12th Pass">12th Pass</option>
+                            <option value="Graduate & Above">Graduate & Above</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="" for="">Technical Qualification: </label>
+                        <select class="" name="tecqualification" id="">
+                            <option value="ITI">ITI</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="MBA">MBA</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label class="" for="">Branch / Stream: </label>
+                        <select class="" name="branch" id="">
+                            <option value="Moter Mechanic">Moter Mechanic</option>
+                            <option value="Diesel  Mechanic">Diesel Mechanic </option>
+                            <option value="Auto Electician">Auto Electician</option>
+                            <option value="AC Technician">AC Technician</option>
+                            <option value="Automobile Engineer">Automobile Engineer</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="" for="">Experience: </label>
+                        <select class="" name="experience" id="">
+                            <option value="Fresher">Fresher</option>
+                            <option value="1-2 Years">1-2 Years </option>
+                            <option value="2-3 Years">2-3 Years</option>
+                            <option value="3-4 Years">3-4 Years</option>
+                            <option value="4-5 Years">4-5 Years</option>
+                            <option value="5 & Above"> 5 & Above</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Resume :</label>
+                        <input name="resume" type="file">
+                    </div>
+
+                    <div>
+                        I certify that the above information is correct & complete to the best of my knowledge & belief
+                        <input type="checkbox" name="accept">
+                    </div>
+                    <!-- <div>
+                     <input name="accept" type="checkbox"> <label for="">   I certify that the above information is correct & complete to the best of my knowledge & belief
+                  </label>
+                </div> -->
+
+                    <div class="row justify-content-center mt-3">
+                        <button type="submit" class="btn btn-outline-success  mx-2">SUBMIT</button>
+                        <button class="btn btn-outline-danger  mx-2">BACK</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- form end -->
+    <!-- footer -->
+    <%- include('./common/footer') -%>

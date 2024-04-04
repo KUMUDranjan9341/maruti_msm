@@ -1,0 +1,70 @@
+<%- include('./common/header') -%>
+<!--  -->
+<div class="container-fluid">
+    <div class="row ">
+      
+        <div class="col-md-2">
+            <%- include('./left') -%>
+        </div>
+        <div class="col-md-10 text-center dashboard p-2">
+            <div class="row  mx-0">
+                <div class="col-md-8">
+                    <h2 class=" text-white">View AMC</h2>
+                </div>
+                <div class="col-md-4 py-2">      
+            <input id="myInput" type="text" placeholder="Search..">
+            <a href="/viewamc"><button class="btn btn-primary btn-sm ">Refresh</button></a>
+                </div>
+            </div>
+ <div class="table-responsive overflow">
+    
+    <%  if(0<data.length){ %>
+
+        <table id="myTable" class="table table-secondary table-striped table-hover  ">
+
+            <tr>
+                <th>sl.no.</th>
+                <th>id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Mobile Number</th>
+                <th>Reg. Number</th>
+                <th>Car model</th>
+                <th>reading</th>
+                <th>plan</th>
+               </tr>
+
+             <%  for(i=0; i<data.length; i++){  %>
+                <tr>
+                    <td> <%= i+1 %></td>
+                    <td> <%= data[i].id %></td>
+                    <td> <%= data[i].fname %></td>
+                    <td> <%= data[i].lname %></td>
+                    <td> <%= data[i].email %></td>
+                    <td> <%= data[i].pnumber %></td>
+                    <td> <%= data[i].regnumber %></td>
+                    <td> <%= data[i].carmodel %></td>
+                    <td> <%= data[i].reading %></td>
+                    <td> <%= data[i].plan %></td>
+                </tr>
+             <%  }  %>
+
+
+        </table>
+
+     <%  } else { %>
+        <h3>Data No fond</h3>
+      <% }  %>
+
+ </div>
+            
+         
+           
+           
+        </div>
+    </div>
+</div>
+
+<!--  -->
+<%- include('./common/footer') -%>

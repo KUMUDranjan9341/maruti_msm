@@ -1,0 +1,559 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.h2text{
+    color: rgb(24, 17, 96);
+    font-weight: 700;
+}
+.color{
+    color: rgb(24, 17, 96);
+}
+.page_active{
+    color: red !important;
+}
+.out:hover{
+    scale: 1.1;
+    transition: 0.6s;
+}
+/* header start */
+.navbar{
+    box-shadow: 0px 0px 5px 1px gray;
+}
+.navbar-brand{
+    width:35%;
+}
+.logo{
+    width: 30%;
+    background-blend-mode: screen;
+}
+.nav-link,.dropdown ul li a{
+    font-family:Georgia;
+    font-weight: 700;
+    font-size: small;
+}
+.nav-link:hover{
+    color: blue  !important;
+}
+/* header end */
+/* main start */
+
+/* banner start */
+.carousel-item{
+ background-size: cover;
+ background-position: center;
+}
+/* carousel-caption{
+    width: 10%;
+} */
+.carousel-caption h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+.carousel-caption p{
+    font-weight: 600;
+}
+.carousel-caption button{
+  font-size: small;
+  font-weight: 600;
+  font-family: Bookman;
+}
+/* banner end */
+
+/* knowme start */
+.box{
+    text-align: center;
+    justify-content: center;
+    background-color: gainsboro;
+    width: 100px;
+    height: 110px;
+    word-wrap: break-word;
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 350px;
+    padding: 10px;
+    
+}  
+.know_img{
+    height: 350px;
+    margin: 2px;
+}
+.know_about_text{
+color: rgb(43, 43, 86);
+font-size: 39px;
+font-weight: bold;
+padding: 2px;
+margin-bottom: 5px;
+}
+.know_about p{
+    font-size: small;
+}
+.know_about button{
+    font-size: small;
+    font-family: Bookman;
+    font-weight: 600;
+
+}
+/* knowme end */
+
+/* services srart */
+.service_back{
+    margin-top: 5rem;
+    background-image: url(images/background.png);
+}
+.service_back span{
+    font-size: 8px;
+
+}
+.service_back h5{
+    margin-top: 2px;
+    font-size: 18px;
+    color: rgb(24, 17, 96);
+}
+.service_back h6{
+    font-size: 10px;
+    color: red;
+}
+.service_icon{
+    width: 45px;
+    height: 45px;
+}
+.service_back .card{
+    border-bottom: 2px solid blue;
+    position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.card{
+    border-bottom: 2px solid blue;
+}
+
+/*  */
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s ease; 
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    transition: top 0.9s ease;
+  }
+  
+  .card:hover .overlay {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+/*  */
+/* .card:hover{
+    transition: 0ms;
+    transform: scale(1.1);
+    
+    animation-name: card;
+   animation-duration: 4s;
+   
+} */
+.positionrelative{
+    position: relative;
+
+}
+.service_position{
+    position: absolute;
+    bottom: 20px; 
+}
+
+/* servces end */
+
+/* main end */
+
+/* about start */
+.aboutbg{
+    background-image: url(images/aboutbg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+}
+.aboutbg p{
+    font-size: 10px;
+}
+.marutiabout{
+    font-style: italic;
+    font-family: Jazz LET;
+    color: rgb(24, 17, 96);
+}
+.msm{
+    box-shadow: 0px 0px 10px 0px gray;
+}
+.msm h4{
+    color: rgb(24, 17, 96);
+    font-weight: 600;
+}
+.abouttext h2{
+    
+color: rgb(24, 17, 96);
+font-weight: 700;
+}
+.coose{
+    background: rgb(33,19,78);
+    background: linear-gradient(90deg, rgba(33,19,78,0.8969712885154062) 0%, rgba(29,29,92,0.812937675070028) 100%, rgba(14,22,66,0.8997724089635855) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);
+}
+.abouttext p{
+    color: gray;
+    font-size: 15px;
+    }
+.coosetext h3{
+    font-weight: 700;
+}
+.coosetext img{
+   width: 50px;
+   height: 50px; 
+}
+.teamtext h2{
+    color: rgb(24, 17, 96);
+}
+.teamtext p{
+   font-size: small;
+   color: gray;
+}
+.team .img-fluid:hover {
+    transition: 0.5s;
+    scale: 1.1;
+    /* color: rgb(24, 17, 96); */
+}
+.team span h6{
+    color: rgb(24, 17, 96);
+}
+.team span p{
+    font-size: 10px;
+}
+.aboutbg2{
+    width: 100%;
+    background-image: url(images/about3.jpg);
+    background-position: center;
+    background-size: cover;
+    height:60vh;
+}
+.aboutbg2 p{
+    font-size: smaller;
+}
+.aboutbg2 i{
+    /* font-family: font awesome; */
+    color: white;
+    font-size: 40px;
+}
+.aboutbg2 i:hover{
+    color: red;
+}
+/* about end */
+
+/* carservices start */
+.shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.float {
+    -webkit-animation: float 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: float 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+
+@-webkit-keyframes float {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.Testimonials .card .card-body .fa-star{
+    color: rgb(119, 16, 16);
+}
+
+.carpaint h6{
+    color: rgb(24, 17, 96);
+}
+.carpaint p{
+    color:gray;
+    font-size: 10px;
+}
+/* carservices end */
+
+/* contact start */
+.contact p{
+    font-size: small;
+}
+.contact button{
+    font-size: small;
+  font-weight: 600;
+  font-family: Bookman;
+}
+.address h6{
+    margin-top: 6px;
+    font-size: small;
+    }
+.address p{
+font-size: small;
+}
+/* contact end */
+
+/* form start */
+.formback{  
+    background-image: url(images/forservice1.jpg!w700wp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formservice{
+    background-color: white;
+   
+}
+.formservice label {
+   width: 38%;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 5px;
+  }
+.formservice input, select, textarea {
+    width: 60%;
+    padding: 2px;
+    margin-top: 10px;
+  }
+  .height{
+    height: 80px;
+  }
+  .formservice button{
+    width: 30%;
+    font-weight: 600;
+    font-family: Bookman;
+  }
+/* form end */
+/******************************* FAQs satart */
+.faqs{
+   position: static;
+}
+.faqs2{
+    height: 80vh;
+    overflow: auto;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+ 
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .tabcontent h4{
+    margin-top: 8px;
+    color: rgb(24, 17, 96);
+    font-family: Optima;
+  }
+  .tabcontent h6{
+    color: red;
+  }
+  .tabcontent p{
+   color: rgb(13, 13, 237);
+   font-size: 14px;
+   line-height: 1.5;
+  }
+/********************************* FAQs End */
+/* careers start */
+.career{
+    width: 100%;
+    /* height: 60vh; */
+    background-image: url(images/maruticareer.webp);
+    background-size: cover;
+    background-position: center;
+}
+.career h1{
+    font-size: 40px;
+}
+.overview p{
+    font-size: 19px;
+    font-style: italic;
+    font-family: Jazz LET;
+    color: rgb(24, 17, 96);
+}
+.career button{
+    font-family: Bookman;
+}
+.joinus p{
+ font-size: small;
+}
+/* careers end */
+/* insurance start */
+.insurance{
+    /* height: 88vh; */
+    width: 100%;
+     /* background-image: url(images/insurancebanner4.webp); */
+    /* background-image: url(images/insurancebanner2.png); */
+    /* background-image: url(images/insurancebanner.webp); */
+    /* background-image: url(images/marutiinsurance.jpg); */
+    /* background-image: url(images/insurancebg.webp); */
+    background-position: center;
+    background-size: cover;
+}
+.insurance button {
+    color: white;
+    font-family: Bookman;
+}
+.insurance2{
+    width: 100%;
+    /* height: 50vh; */
+    /* background-image: url(images/maruti-suzuki-insurance-1.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+.insurance2 img{
+    width: 25%;
+}
+
+/* insurance end */
+/* AMC START */
+.dot::before{
+    
+   text-decoration: dotted;
+}
+/* AMC END */
+/* labour start */
+.labour button{
+  width: 50%;
+  font-family: Bookman;
+
+}
+/* labour end */
+
+/* footer start */
+.footer_back{
+    background: rgb(15,23,60);
+    background: linear-gradient(90deg, rgba(15,23,60,0.8969712885154062) 0%, rgba(9,9,121,0.812937675070028) 51%, rgba(14,22,66,0.8997724089635855) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);
+}
+.footer_back p{
+    font-size: 14px;
+    font-family: Palatino;
+}
+
+.footer_last ,.footer_last p{
+    color: white;
+    background-color: rgb(18, 18, 74);
+}
+/* footer end */
+
+/* dashboard start */
+.dashboard{
+    background: rgb(15,23,60);
+    background: linear-gradient(90deg, rgba(15,23,60,0.8969712885154062) 0%, rgba(9,9,121,0.812937675070028) 51%, rgba(14,22,66,0.8997724089635855) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);
+}
+.overflow{
+    height: 75vh;
+    /* white-space: nowrap; */
+    /* width: 100%; */
+   /* overflow: scroll; */
+}
+table{
+    white-space: nowrap;
+}
+ul{
+    list-style: none;
+}
+.admin ul li a{
+    
+    font-size: 15px;
+}
+/* signup */
+.signup{
+    font-family: serif;
+}
+
+ .signup input{
+    /* font-family: Impact, fantasy; */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+} 
+.profile_img{
+    /* border: 2px solid red; */
+    border-radius: 80%;
+ height: 110px;
+ width: 130px;
+}
+.positionab{
+   opacity: 1.0;
+}
+.loginbox{
+    height: 85vh;
+    background: rgb(15,23,60);
+    background: linear-gradient(90deg, rgba(15,23,60,0.8969712885154062) 0%, rgba(9,9,121,0.812937675070028) 51%, rgba(14,22,66,0.8997724089635855) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+

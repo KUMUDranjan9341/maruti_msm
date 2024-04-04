@@ -1,0 +1,141 @@
+<%- include('common/header') -%>
+<!--  -->
+<div class="container-fluid ">
+    <div class="row ">
+       
+        <div class="col-md-2 ">
+            <%- include('./left') -%>
+        </div>
+        <div class="col-md-10 dashboard text-center py-4">
+           <h2 class="text-white py-5">WELCOME TO ADMIN </h2>
+           <!-- <div>
+            <button class="btn btn-outline-danger text-white " data-bs-toggle="modal" data-bs-target="#signup">Sign-Up</button>
+            <button class="btn btn-outline-success text-white" data-bs-toggle="modal" data-bs-target="#login">LogIn</button>
+        </div> -->
+        </div>
+       
+    </div>
+</div>
+
+
+
+ <!-- Button trigger modal 
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>  -->
+  
+  <!-- signup -->
+   <div class="modal fade " id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">SignUp</h1>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body signup ">
+         <form action="/signup" method="post">
+            <div class="row px-2 justify-content-center">
+                <!-- <div class="col-md-5">
+                  
+                    
+                </div> -->
+                <div class="col-md-10 p-2">
+                <div  class="">
+                      <div class="row justify-content-center">
+                        <img class="img-fluid profile_img" src="images/profile.jpg" alt="" id="output">
+                        <input class="w-75 border" type="file" id="file" onchange="loadfile(event)" name="photo">
+                      </div>
+                </div>
+                    <div class="my-2">
+                        <label class="w-25" for="">Name</label>
+                        <input class="w-100" type="text" name="name" id="">
+                      </div>
+                      <div  class="my-2">
+                        <label  class="w-50" for="">Email</label>
+                        <input  class="w-100" type="email" name="email" id="">
+                      </div>
+                      <div  class="my-2">
+                        <label  class="w-50" for="">Mobile Number</label>
+                        <input class="w-100" type="text" name="number" id="">
+                      </div>
+                      <div  class="my-2">
+                        <label class="w-100" for="">Password</label>
+                        <input class="w-100" type="password" name="password" id="">
+                      </div>
+                      <div  class="my-2">
+                        <label class="w-100" for="">Confirm Password</label>
+                        <input class="w-100" type="password" name="cpassword" id="">
+                      </div>
+                      <div class="">
+                        <div class="row justify-content-center p-3">
+                            <button class="btn btn-outline-success w-50"   type="submit">Submit</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+           
+         </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- login -->
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">SignUp</h1>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body signup">
+         <form action="/login" method="post">
+            <div class="row px-2 justify-content-center">
+                <!-- <div class="col-md-5">
+                  
+                    <label for="">Photo</label>
+                    <input type="file">
+                </div> -->
+                <div class="col-md-10 border p-2">
+                   
+                      <div>
+                        <label  class="w-50" for="">Email</label>
+                        <input  class="w-100" type="email" name="email" id="">
+                      </div>
+                     
+                      <div>
+                        <label class="w-100" for="">Password</label>
+                        <input class="w-100" type="password" name="password" id="">
+                      </div>
+                     
+                      <div class="">
+                        <div class="row justify-content-center p-3">
+                            <button class="btn btn-outline-success w-50"   type="submit">Submit</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+           
+         </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+<!--  -->
+<%- include('common/footer') -%>
+
+<script>
+    loadfile = function(event){
+        let image = document.getElementById('output')
+        image.src=URL.createObjectURL(event.target.files[0])
+    }
+</script>

@@ -1,0 +1,107 @@
+<%- include('./common/header') -%>
+<!-- header -->
+<div class="container-fluid aboutbg ">
+    <div class="row p-5">
+        <div class="col-md-7">
+            <div class="">
+                <span class="">
+                 <h2 class="text-white">ENQUIRY FOR AMC</h2>
+                 <p class="text-white">HOME > SERVICES > AMC INSURANCE > <span class="page_active">ENQUIRY FOR AMC</span> </p>
+                </span>
+             </div>
+        </div>
+        <div class="col-md-6">
+           
+        </div>   
+    </div>
+</div>
+
+<div class="container-fluid my-3 mt-3 mb-3">
+    <div class="row justify-content-center">
+        <div class="col-md-5 border border-3 p-3 formservice">
+            <h3 class="color text-center">Enquiry For AMC</h3>
+              <form  class="mt-4 formservice" action="/amcform" method="post">
+          
+                 <div>
+                  <label  class="" for="">Location</label>
+                  <select class="" name="location" id="">
+                      <option value="G.T. Karnal Road(Delhi)">G.T. Karnal Road(Delhi)</option>
+                      <option value="Okhla Indl Area Phase-II (Delhi)">Okhla Indl Area Phase-II (Delhi)</option>
+                      <option value="Plote N0. 09,South Phase (Chennai)">Plote N0. 09,South Phase (Chennai)</option>
+                  </select>
+                 </div>
+                 <div>
+                    <label  class="" for="">First Name* :</label>
+                <input type="text"id="" name="fname">
+                </div>
+            
+               <div>
+                <label  class="" for="">Last Name* :</label>
+                <input type="text" id="" name="lname">
+               </div>
+        
+               <div>
+                <label class="" for="">Email* :</label>
+                <input type="email"id="" name="email">
+               </div>
+               <div>
+                <label class="" for="">Phone Number* :</label>
+                <input type="number" id="" name="pnumber">
+            </div>
+                 <div>
+                    <label for="">Vechile Regn. Number:</label>    
+                    <input  class="" type="text" name="regnumber">
+               </div>
+              
+                  <div>
+                      <label  class="" for="">Car Model* :</label>
+                  <select  class="" name="carmodel" id="">
+                      <option value="A-Srat">A-Srat</option>
+                      <option value="Alto">Alto</option>
+                      <option value="Alto 800">Alto 800</option>
+                      <option value="Alto K10">Alto K10</option>
+                      <option value="Baleno">Baleno</option>
+                      <option value="Celerio">Celerio</option>
+                      <option value="Ciaz">Ciaz</option>
+                      <option value="Eeco">Eeco</option>
+                      <option value="Ertiga">Ertiga</option>
+                      <option value="Esteem">Esteem</option>
+                      <option value="Grand Vitara">Grand Vitara</option>
+                      <option value="Gypsy">Gypsy</option>
+                      <option value="Kizashi">Kizashi</option>
+                      <option value="Maruti 1000">Maruti 1000</option>
+                      <option value="Maruti 800">Maruti 800</option>
+                      <option value="New Swift Dzire">New Swift Dzire</option>
+                      <option value="New Swift K12">New Swift K12</option>
+                      <option value="Omni">Omni</option>
+                      <option value="Ritz">Ritz</option>
+                      <option value="S-cross">S-cross</option>
+                  </select>
+                  </div>
+                  <div>
+                    <label for="">Current Odometer Reading(km):</label>    
+                    <input  class="" type="text" name="reading">
+               </div>
+               <div>
+                <label  class="" for="">Plan Intersted For</label>
+                <select class="" name="plan" id="">
+                    <option value="Silver Plus">Silver Plus</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Gold Plus">Gold Plus</option>
+                </select>
+               </div>
+              
+              
+                 <div class="row justify-content-center mt-2">
+                  <button type="submit" class="btn btn-outline-success w-25 mx-2">SUBMIT</button>
+               <button class="btn btn-outline-danger w-25  mx-2">BACK</button>
+              </div>
+          </form>
+                 
+              
+              
+          </div>
+    </div>
+</div>
+<!-- footer -->
+<%- include('./common/footer') -%>

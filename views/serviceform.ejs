@@ -1,0 +1,140 @@
+<%- include('common/header.ejs') -%>
+<!-- header -->
+<div class="container-fluid aboutbg ">
+    <div class="row p-5">
+        <div class="col-md-7">
+            <div class="">
+                <span class="">
+                 <h2 class="text-white">CAR SERVICES FORM</h2>
+                 <p class="text-white">HOME > SERVICES > CAR SERVICES > <span class="page_active">BOOK SERVICE</span></p>
+                </span>
+             </div>
+        </div>
+        <div class="col-md-6">
+           
+        </div>   
+    </div>
+</div>
+<!-- form start -->
+
+<div class="container-fluid my-3 ">
+    <div class="row justify-content-center">
+        <!-- <div class="col-md-7">
+           <img src="images/" alt="">
+        </div> -->
+    <div class="col-md-5 border border-3 p-3 formservice">
+      <h3 class="color text-center">Book Your Car for Service</h3>
+        <form  class="mt-4 formservice" action="/form" method="post">
+    
+           <div>
+            <label class="" for="">Service Type :</label>
+            <select class="" name="servicetype" id="">
+                <option value="1st Free Service">1st Free Service</option>
+                <option  value="2nd Free Service">2nd Free Service</option>
+                <option value="3rd Free Service">3rd Free Service</option>
+                <option value="Paid Service">Paid Service</option>
+                <option value="Door Step Service">Door Step Service</option>
+                <option value="Running Reapir(Any Unachedual Repair)">Running Reapir(Any Unachedual Repair) </option>
+                <option value="Accidental/Body Repair">Accidental/Body Repair</option>
+            </select>
+           </div>
+        
+          <div>
+            <label  class="" for="">Additional Work Required : </label>
+            <input class="" type="text"  id="" name="addwork">
+           
+       
+          </div>
+        
+           <div>
+            <label  class="" for="">Location</label>
+            <select class="" name="location" id="">
+                <option value="G.T. Karnal Road(Delhi)">G.T. Karnal Road(Delhi)</option>
+                <option value="Okhla Indl Area Phase-II (Delhi)">Okhla Indl Area Phase-II (Delhi)</option>
+                <option value="Plote N0. 09,South Phase (Chennai)">Plote N0. 09,South Phase (Chennai)</option>
+            </select>
+           </div>
+        
+            <div>
+                <label  class="" for="">Car Model* :</label>
+            <select  class="" name="carmodel" id="">
+                <option value="A-Srat">A-Srat</option>
+                <option value="Alto">Alto</option>
+                <option value="Alto 800">Alto 800</option>
+                <option value="Alto K10">Alto K10</option>
+                <option value="Baleno">Baleno</option>
+                <option value="Celerio">Celerio</option>
+                <option value="Ciaz">Ciaz</option>
+                <option value="Eeco">Eeco</option>
+                <option value="Ertiga">Ertiga</option>
+                <option value="Esteem">Esteem</option>
+                <option value="Grand Vitara">Grand Vitara</option>
+                <option value="Gypsy">Gypsy</option>
+                <option value="Kizashi">Kizashi</option>
+                <option value="Maruti 1000">Maruti 1000</option>
+                <option value="Maruti 800">Maruti 800</option>
+                <option value="New Swift Dzire">New Swift Dzire</option>
+                <option value="New Swift K12">New Swift K12</option>
+                <option value="Omni">Omni</option>
+                <option value="Ritz">Ritz</option>
+                <option value="S-cross">S-cross</option>
+            </select>
+            </div>
+        
+           <div>
+                <label for="">Vechile Regn. Number:</label>    
+                <input  class="" type="text" name="regnumber">
+           </div>
+    
+           <div>
+            <label  class="" for="">Preffered Date for Service :</label>
+            <input type="date"id="" name="pdate">
+           </div>
+        
+            <div>
+                <label  class="" for="">First Name* :</label>
+            <input type="text"id="" name="fname">
+            </div>
+        
+           <div>
+            <label  class="" for="">Last Name* :</label>
+            <input type="text" id="" name="lname">
+           </div>
+    
+           <div>
+            <label class="" for="">Email* :</label>
+            <input type="email"id="" name="email">
+           </div>
+        
+            <div>
+                <label class="" for="">Pin Code :</label>
+                <input type="text" id="pcode" name="pincode">
+            </div>
+        <div>
+            <label class="" for="">Phone Number* :</label>
+            <input type="number" id="" name="pnumber">
+        </div>
+        
+            <div class="row my-3">
+            <div  class="col-sm-6"for="">Pick-Up require(T & C) :</div>
+         <div class="col-sm-6">
+         
+            YES <input class=" w-25" type="radio" name="pick" id="" value="YES">
+            No <input class="w-25" type="radio" name="pick" id="" value="No"> 
+            </div>
+        </div>
+           <div class="row justify-content-center">
+            <button type="submit" class="btn btn-outline-success w-25 mx-2">SUBMIT</button>
+         <button class="btn btn-outline-danger w-25  mx-2">BACK</button>
+        </div>
+    </form>
+           
+        
+        
+    </div>
+    </div>
+    </div>
+    
+
+<!-- footer -->
+<%- include('common/footer.ejs') -%>

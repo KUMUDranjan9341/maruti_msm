@@ -1,0 +1,35 @@
+
+const storage = multer.diskStorage({
+    destination : function(req,file,cb){
+        cb(null,'upload')
+    },filename:function(req,file,cb){
+        cb(null,Date.now()+"-"+file.originalname)
+    } 
+})
+const fileFilter =(req, file, cb) => {
+    if (!file.originalname.match(/\.(jpg|jpeg|png|pdf|PDF)$/)) {
+        return cb(new Error('File must be of type JPG, JPEG, or PNG and nore more than 2MB in size'))
+    }
+    cb(undefined, true)
+  }
+const upload  = multer({storage , fileFilter})
+    app.post('/jobforms',upload.single("resume"),(req,res) =>{
+        const {location,postapply,name,fathername,dateofbirth,phonenumber,email,qualification,tecqualification,branch,experience,accept} =req.body;
+         const resume =  req.file.filename
+         console.log(resume)
+        let jobform = 'insert into msm_job(location,postapply,name,fathername,dateofbirth,phonenumber,email,qualification,tecqualification,branch,experience,resume,accept) values (?)'
+
+        let val = [location,postapply,name,fathername,dateofbirth,phonenumber,email,qualification,tecqualification,branch,experience,resume,accept]
+
+        con.query(jobform,[val],(err,result)=>{
+            if(err){
+                console.log(err)
+            }
+            else{
+                console.log(result)
+                console.log('data saved')
+                res.redirect('/jobforms')
+             }
+        })
+
+    })

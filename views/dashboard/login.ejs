@@ -1,0 +1,46 @@
+
+
+
+
+<%- include('common/header') -%>
+
+<div class="container-fluid loginbox">
+  <div class="row justify-content-center">
+    <div class="col-6 my-5 signup">
+      <form action="/login" method="post">
+        <div class="row px-2 justify-content-center">
+            <!-- <div class="col-md-5">
+              
+                <label for="">Photo</label>
+                <input type="file">
+            </div> -->
+            <div class="col-md-10 border px-5 justify-content-center shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+              <h2 class="text-center h2text mt-3">LogIn</h2>
+               
+                  <div class="my-3">
+                    <label  class="w-50" for="">Email</label>
+                    <input  class="w-100" type="email" name="email" id="">
+                  </div>
+                 
+                  <div class="my-3">
+                    <label class="w-100" for="">Password</label>
+                    <input class="w-100" type="password" name="password" id="">
+                  </div>
+                  <div>
+                    <input type="checkbox">
+                    <label for="">Remmember  password</label>
+                  </div>
+                 
+                  <div class="">
+                    <div class="row justify-content-center p-3">
+                        <button class="btn btn-outline-success w-50"   type="submit">Submit</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+       
+     </form>
+    </div>
+  </div>
+</div>
+ <%- include('common/footer') -%>

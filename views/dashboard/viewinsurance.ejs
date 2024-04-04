@@ -1,0 +1,79 @@
+<%- include('./common/header') -%>
+<!--  -->
+<div class="container-fluid">
+    <div class="row ">
+       
+        <div class="col-md-2">
+            <%- include('./left') -%>
+        </div>
+        <div class="col-md-10 text-center p-2 dashboard">
+            <div class="row  mx-0">
+                <div class="col-md-8">
+                    <h2 class=" text-white">View Insurance</h2>
+                </div>
+                <div class="col-md-4 py-2">      
+            <input id="myInput" type="text" placeholder="Search..">
+            <a href="/viewinsurance"><button class="btn btn-primary btn-sm ">Refresh</button></a>
+                </div>
+            </div>
+ <div class="table-responsive overflow">
+    
+    <%  if(0<data.length){ %>
+
+        <table id="myTable" class="table table-secondary table-striped table-hover  ">
+
+            <tr>
+                <th>sl.no.</th>
+                <th>id</th>
+                <th>Location</th>
+                <th>Service Type</th>
+                <th>Car Model</th>
+                <th>Reg. Number</th>
+                <th>Chassis Number</th>
+                <th>Engine Number</th>
+                <th>Current Insurance</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Pin Code</th>
+                <th>Mobile Number</th>
+               </tr>
+
+             <%  for(i=0; i<data.length; i++){  %>
+                <tr>
+                    <td> <%= i+1 %></td>
+                    <td> <%= data[i].id %></td>
+                    <td> <%= data[i].location %></td>
+                    <td> <%= data[i].servicetype %></td>
+                    <td> <%= data[i].carmodel %></td>
+                    <td> <%= data[i].regnumber %></td>
+                    <td> <%= data[i].chassisnumber %></td>
+                    <td> <%= data[i].enginenumber %></td>
+                    <td> <%= data[i].currentinsurance %></td>
+                    <td> <%= data[i].firstname %></td>
+                    <td> <%= data[i].lastname %></td>
+                    <td> <%= data[i].email %></td>
+                    <td> <%= data[i].pincode %></td>
+                    <td> <%= data[i].phonenumber %></td>
+                    
+                </tr>
+             <%  }  %>
+
+
+        </table>
+
+     <%  } else { %>
+        <h3>Data No fond</h3>
+      <% }  %>
+
+ </div>
+            
+         
+           
+           
+        </div>
+    </div>
+</div>
+
+<!--  -->
+<%- include('./common/footer') -%>
